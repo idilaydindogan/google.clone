@@ -5,15 +5,15 @@ import PaginationButtons from "./PaginationButtons";
 const ImageSearchResults = ({ results }) => {
 	return (
 		<div className="pb-40 mt-4 sm:pb-24">
-			<div className="grid grid-cols-1 gap-3 px-6 mb-10  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+			<div className="grid grid-cols-1 gap-3 px-6 mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 				{results.items.map((result) => (
 					<div key={result.link} className="group">
-						<div className="flex items-center justify-center bg-gray-100 rounded-xl">
+						<div className="flex items-center justify-center bg-gray-100 rounded-xl hover:shadow-xl">
 							<Link href={result.image.contextLink} target="_blank">
 								<img
 									src={result.link}
 									alt={result.title}
-									className="h-60 hover:shadow-xl rounded-xl"
+									className="h-60 rounded-xl"
 								/>
 							</Link>
 						</div>

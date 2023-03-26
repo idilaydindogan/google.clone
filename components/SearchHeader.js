@@ -25,9 +25,11 @@ const SearchHeader = () => {
 					<RiSettings3Line className="header-icon" />
 					<TbGridDots className="header-icon" />
 				</div>
-				<button className="px-6 py-2 ml-2 font-medium text-white transition-all bg-blue-500 rounded-md hover:brightness-105 hover:shadow-md">
-					Sign In
-				</button>
+				<Link href={"https://accounts.google.com"} target="_blank">
+					<button className="px-6 py-2 ml-2 font-medium text-white transition-all bg-blue-500 rounded-md hover:brightness-105 hover:shadow-md">
+						Sign In
+					</button>
+				</Link>
 			</div>
 			<SearchHeaderOptions />
 		</header>
