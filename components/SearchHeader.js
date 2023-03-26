@@ -18,18 +18,22 @@ const SearchHeader = () => {
 						alt="google logo"
 					/>
 				</Link>
-				<div className="flex-1">
+				<div className="hidden sm:inline-block sm:flex-1">
 					<SearchBox />
 				</div>
+
 				<div className="hidden space-x-2 text-gray-600 md:inline-flex">
 					<RiSettings3Line className="header-icon" />
 					<TbGridDots className="header-icon" />
 				</div>
 				<Link href={"https://accounts.google.com"} target="_blank">
-					<button className="px-6 py-2 ml-2 font-medium text-white transition-all bg-blue-500 rounded-md hover:brightness-105 hover:shadow-md">
+					<button className="px-3 py-2 ml-2 text-sm text-white transition-all bg-blue-500 rounded-md sm:text-medium sm:px-6 hover:brightness-105 hover:shadow-md">
 						Sign In
 					</button>
 				</Link>
+			</div>
+			<div className="mb-6 sm:hidden">
+				<SearchBox />
 			</div>
 			<SearchHeaderOptions />
 		</header>

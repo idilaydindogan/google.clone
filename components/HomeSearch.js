@@ -29,24 +29,24 @@ const HomeSearch = () => {
 		<>
 			<form
 				onSubmit={handleSubmit}
-				className=" flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 py-3 rounded-full hover:shadow-md transition-shadow focus-within:shadow-md sm:max-w-xl lg:max-w-2xl"
+				className=" flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 py-3 rounded-full hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2xl"
 			>
-				<AiOutlineSearch className="text-xl text-gray-500 mr-2" />
+				<AiOutlineSearch className="mr-2 text-xl text-gray-500" />
 				<input
 					type="text"
-					className="flex-grow focus:outline-none text-gray-700"
+					className="flex-grow text-gray-700 focus:outline-none"
 					onChange={(e) => setInput(e.target.value)}
 					value={input}
 				/>
 				<BsFillMicFill className="text-lg" />
 			</form>
-			<div className="mt-8 mb-3 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center">
+			<div className="flex flex-col items-center justify-center mt-8 space-y-2 sm:space-y-0 sm:space-x-4 sm:flex-row ">
 				<button className="btn" onClick={handleSubmit}>
 					Google Search
 				</button>
 				<button
 					onClick={randomSearch}
-					className="btn flex items-center justify-center"
+					className="flex items-center justify-center btn"
 					disabled={randomLoading}
 				>
 					{randomLoading ? (
